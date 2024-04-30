@@ -11,7 +11,10 @@ export default function Products () {
     return (
         <>
         <h2 className="text-center">Produtos que estão bombando!</h2>
-        {renderCards()}
+        <div className="container row mx-auto">
+            {renderCards()}
+
+        </div>
         </>
     )
 }
