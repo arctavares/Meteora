@@ -1,12 +1,14 @@
 export default function CategoryCard() {
     return (
-        <div className="container">
-        <div className="card">
-          <svg className="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-          <div className="card-header">
-            <p className="text-center">Categoria</p>
-          </div>
+        <div className="container row mx-auto">
+        <div className="col-6 mx-auto g-4 w-100">
+            <div className="card">
+            <img src="https://m.media-amazon.com/images/I/619QaGrReCL._AC_UF894,1000_QL80_.jpg" alt="landscape" className="bd-placeholder-img card-img-top"/>
+            <div className="card-header">
+                <p className="text-center">Categoria</p>
+            </div>
+            </div>
         </div>
-      </div>
+    </div>
     )
 }
