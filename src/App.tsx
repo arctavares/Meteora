@@ -1,6 +1,7 @@
 import Carousel from './components/Carousel';
 import Categories from './components/Categories';
 import Header from './components/Header';
+import Products from './components/Products';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Carousel />
       <Categories />
+      <Products />
     </>
   )
 }
