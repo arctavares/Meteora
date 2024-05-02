@@ -5,22 +5,22 @@ export default function Carousel() {
       imgMobile: 'src/assets/Mobile/banner1-mobile.png',
       imgTablet: 'src/assets/Tablet/banner1-tablet.png',
       imgDesktop: 'src/assets/Desktop/banner1-desktop.png',
-      title: 'title',
-      text: 'text',
+      title: '',
+      text: '',
     },
     {
       imgMobile: 'src/assets/Mobile/banner2-mobile.png',
       imgTablet: 'src/assets/Tablet/banner2-tablet.png',
       imgDesktop: 'src/assets/Desktop/banner2-desktop.png',
-      title: 'title',
-      text: 'text',
+      title: 'COLEÇÃO ATEMPORAL',
+      text: 'Estilo e qualidade para durar.',
     },
     {
       imgMobile: 'src/assets/Mobile/banner3-mobile.png',
       imgTablet: 'src/assets/Tablet/banner3-tablet.png',
       imgDesktop: 'src/assets/Desktop/banner3-desktop.png',
-      title: 'title',
-      text: 'text',
+      title: 'COLEÇÃO ATEMPORAL',
+      text: 'Alto impacto visual, baixo impacto ambiental!',
     }
   ]
 
@@ -31,9 +31,9 @@ export default function Carousel() {
           <img src={slide.imgMobile} className="d-block w-100 img-fluid d-md-none" alt="..." />
           <img src={slide.imgTablet} alt="..." className="img-fluid d-none d-md-block d-xl-none" />
           <img src={slide.imgDesktop} alt="" className="img-fluid d-none d-xl-block w-100"/>
-          <div className="carousel-caption d-none d-md-block">
-            <h5>{slide.title}</h5>
-            <p>{slide.text}</p>
+          <div className="carousel-caption d-none d-md-block ">
+            <h5 className="fs-1">{slide.title}</h5>
+            <p className="fs-3">{slide.text}</p>
           </div>
         </div>
         )
