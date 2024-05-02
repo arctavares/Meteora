@@ -54,5 +54,8 @@ table {
 
 .smallerText {
   font-size: 13px;
-  background-color: red;
+}
+
+.divsFacility {
+  width: 325px;
 }/*# sourceMappingURL=style.css.map */
