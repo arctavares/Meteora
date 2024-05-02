@@ -40,8 +40,16 @@ export default function Banner () {
 
     return (
         <section className="pb-4">
-            <h2 className="text-center">Conheça todas as nossas facilidades</h2>
-            <div className="d-flex flex-column align-items-center gap-3">
+            <h2 className="text-center fs-2 mb-3">Conheça todas as nossas facilidades</h2>
+            <div className="
+            d-flex 
+            flex-column 
+            align-items-center 
+            gap-3 
+            flex-lg-row 
+            justify-content-center
+            px-3
+            ">
                 {renderItems()}
             </div>
         </section>
