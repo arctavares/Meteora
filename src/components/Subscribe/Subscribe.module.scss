@@ -1,0 +1,6 @@
+@use '../../styles/abstract/variables';
+
+.sendBtn {
+    background-color: variables.$purple;
+    color: white;
+}
