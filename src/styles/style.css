@@ -50,4 +50,9 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.smallerText {
+  font-size: 13px;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
