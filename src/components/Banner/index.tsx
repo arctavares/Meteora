@@ -28,10 +28,13 @@ export default function Banner () {
         return items.map((item) => {
             return (
                 <div className="divsFacility  d-flex">
-                    <div dangerouslySetInnerHTML={{ __html: item.icon }} />
+                    <div 
+                        dangerouslySetInnerHTML={{ __html: item.icon }} 
+                        className="icon"    
+                    />
                     <div>
-                        <div className="ms-3 mb-1">{item.title}</div>
-                        <div className="smallerText ms-3">{item.text}</div>
+                        <div className="ms-3 mb-1 itemTitle">{item.title}</div>
+                        <div className="smallerText ms-3 text-white">{item.text}</div>
                     </div>
                 </div>
             )
@@ -39,8 +42,8 @@ export default function Banner () {
     }
 
     return (
-        <section className="pb-4">
-            <h2 className="text-center fs-2 mb-3">Conheça todas as nossas facilidades</h2>
+        <section className="pb-4 bg-black p-4">
+            <h2 className="text-center fs-2 mb-3 text-white">Conheça todas as nossas facilidades</h2>
             <div className="
             d-flex 
             flex-column 

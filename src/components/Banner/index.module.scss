@@ -1,6 +1,14 @@
+@use '../../styles/abstract/variables';
+
 .smallerText {
     font-size: 13px;
 }
 .divsFacility {
     width: 325px;
+}
+.itemTitle {
+    color: variables.$yellow;
+}
+.icon {
+    color: variables.$yellow;
 }
