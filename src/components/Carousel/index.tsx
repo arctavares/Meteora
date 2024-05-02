@@ -1,5 +1,46 @@
 export default function Carousel() {
-    return (
+
+  const slides = [
+    {
+      imgMobile: 'src/assets/Mobile/banner1-mobile.png',
+      imgTablet: 'src/assets/Tablet/banner1-tablet.png',
+      imgDesktop: 'src/assets/Desktop/banner1-desktop.png',
+      title: 'title',
+      text: 'text',
+    },
+    {
+      imgMobile: 'src/assets/Mobile/banner2-mobile.png',
+      imgTablet: 'src/assets/Tablet/banner2-tablet.png',
+      imgDesktop: 'src/assets/Desktop/banner2-desktop.png',
+      title: 'title',
+      text: 'text',
+    },
+    {
+      imgMobile: 'src/assets/Mobile/banner3-mobile.png',
+      imgTablet: 'src/assets/Tablet/banner3-tablet.png',
+      imgDesktop: 'src/assets/Desktop/banner3-desktop.png',
+      title: 'title',
+      text: 'text',
+    }
+  ]
+
+  function renderSlides() {
+      return slides.map(slide => {
+        return (
+          <div className="carousel-item active">
+          <img src={slide.imgMobile} className="d-block w-100 img-fluid d-md-none" alt="..." />
+          <img src={slide.imgTablet} alt="..." className="img-fluid d-none d-md-block d-xl-none" />
+          <img src={slide.imgDesktop} alt="" className="img-fluid d-none d-xl-block w-100"/>
+          <div className="carousel-caption d-none d-md-block">
+            <h5>{slide.title}</h5>
+            <p>{slide.text}</p>
+          </div>
+        </div>
+        )
+      })
+  }
+
+  return (
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -7,27 +48,7 @@ export default function Carousel() {
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="https://img.freepik.com/fotos-premium/melhor-foto-aleatoria_865967-90776.jpg?w=900" className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <img src="https://img.freepik.com/fotos-premium/melhor-foto-aleatoria_865967-90776.jpg?w=900" className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <img src="https://img.freepik.com/fotos-premium/melhor-foto-aleatoria_865967-90776.jpg?w=900" className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
+    {renderSlides()}
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
