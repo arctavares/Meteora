@@ -24,7 +24,7 @@ export default function Products () {
             imgTablet: 'src/assets/Tablet/produtos/camiseta.png',
             imgMobile: 'src/assets/Mobile/produtos/camiseta.png',
             title: 'Camiseta casual',
-            text: 'Camiseta branca básica, ótima para o dia a dia. Combina com qualquer estilo!',
+            text: 'Camiseta amarela básica, ótima para o dia a dia. Combina com qualquer estilo!',
             price: 'R$40,00'
         },
         {
